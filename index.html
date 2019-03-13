@@ -1,92 +1,182 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pl_PL">
 <head>
-<meta charset="utf-8">
-<title>Cenerion</title>
-<style>
-	body{
-		margin: 0;
-	}
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Cyryl Matuszewski</title>
 	
-	#container{
-		width: 1000px;
-		margin: 0 auto;
-	}
-	
-	#header{
-		width: 100%;
-		height: 100px;
-	}
-	#menu{
-		width: 100%;
-		height: 35px;
-		background-color: black;
-		border-radius: 7px;
-	}
-	#main{
-		width: 100%;
-		min-height: 300px;
-	}
-	#footer{
-		width: 100%;
-		height: 20px;
-		background-color: #bbb;
-		border-bottom-left-radius: 6px;
-		border-bottom-right-radius: 6px;
-	}
-	
-	.seg{
-		width: 95%;
-		margin: 10px auto;
-		background-color: #ededed;
-		min-height: 50px;
-		padding: 10px;
-		border-radius: 7px;
-	}
-	
-	.seg h3{
-		margin: 8px 0;
-	}
-	
-	.concentrator{
-		padding: 2px;
-	}
-	
-	.concentrator div.card{
-		/display: block;
-		border: 1px solid black;
-		border-radius: 7px;
-		margin: 15px;
-		min-width: 30px;
-		/min-height: 50px;
-		width: 40%;
-		float: left;
-	}
-</style>
-<link rel="stylesheet" href="./style.css" >
+	<link rel="" href=""/>
+	<style>
+		body{
+			background-color: #bdf3f3;
+		}
+		#wrap{
+			padding-top: 10px;
+			cbackground-color: #a9f1df;
+			background-color: #bdf3f3;
+		}
+		#footer{
+			background-color: #343a40;
+			color: blue;
+			height: 30px;
+		}
+		#bttn{
+			margin: 5px auto;
+			
+		}
+		.logo{
+			margin-left: 15px;
+		}
+		.card{
+			margin-bottom: 15px;
+		}
+		banner{
+			width: 1000px;
+			height: 300px;
+		}
+		.nav-itm:hover{
+			background-color: #202428;
+		}
+	</style>
 </head>
 <body>
-	<div id="container">
-		<div id="header"></div>
-		<div id="menu">
-			<ul>
-				<li>Start</li>
-				<li><a href="./pit">Pit</a></li>
-				<li></li>
-			</ul>
-		</div>
-		<div id="main">
-			<div class="seg">
-				<h3>Moje projekty z Programowania Aplikacji</h3>
-				<div class="concentrator">
-					<div class="card">mah??</div>
-					<div class="card"></div>
-					<div class="card"></div>
-					<div class="card"></div>
+
+<div id="banner" class="container-fluid">
+	<img src="#" />
+</div>
+
+<!--navigation bar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark .fixed-top">
+	<a class="navbar-brand logo" href="#">Portfolio</a>
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navb">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item nav-itm">
+				<a class="nav-link" href="#">Projekty</a>
+			</li>
+			<li class="nav-item nav-itm">
+				<a class="nav-link" href="#">O mnie</a>
+			</li>
+			<li class="nav-item nav-itm">
+				<a class="nav-link disabled" href="#">Futr</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Dropdown link
+				</a>
+				<div class="dropdown-menu bg-dark">
+					<a class=".dropdown-item nav-link nav-itm" href="#">Link 1</a>
+					<a class="dropdown-item nav-link nav-itm" href="#">Link 2</a>
+					<a class="dropdown-item nav-link nav-itm" href="#">Link 3</a>
 				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--content-->
+	
+	<div id="wrap" class="container" style="max-width: 1000px;">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Być czy nie być, o to nie ma pytania</h2>
 			</div>
 		</div>
-		<div id="footer"></div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Nazywam się Cyryl Matuszewski a to jest strona o mnie i o tym co robię. Zajmuję się tworzeniem stron i pisaniem programów pc i embeded oraz elektroniką.</p>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+		
+			<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+			
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://placehold.it/320x180" alt="Alternatywny opis obrazka">
+					<div class="card-block">
+						<h4 class="card-title">Tytuł karty</h4>
+						<p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+						<a href="#" id="bttn" class="btn btn-primary">Zobacz</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://placehold.it/320x180" alt="Alternatywny opis obrazka">
+					<div class="card-block">
+						<h4 class="card-title">Tytuł karty</h4>
+						<p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+						<a href="#" id="bttn" class="btn btn-primary">Zobacz</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://placehold.it/320x180" alt="Alternatywny opis obrazka">
+					<div class="card-block">
+						<h4 class="card-title">Tytuł karty</h4>
+						<p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+						<a href="#" id="bttn" class="btn btn-primary">Zobacz</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://placehold.it/320x180" alt="Alternatywny opis obrazka">
+					<div class="card-block">
+						<h4 class="card-title">Tytuł karty</h4>
+						<p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+						<a href="#" id="bttn" class="btn btn-primary align-self-center">Zobacz</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
 	</div>
-</body>
+	  
+	  
+	  
+	<div id="footer" class="container-fluid">
+ 	 	<div class="row">
+			<div class="col">
+			</div>
+			<div class="col">
+			
+			</div>
+			<div class="col">
+			
+			</div>
+			<div class="col">
+			
+			</div>
+			<div class="col">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 align-self-center">
+				Cyryl Matuszewski
+			</div>
+		</div>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
