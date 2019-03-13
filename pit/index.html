@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Pit-11</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+  <body>
+    <div class="container">
+		<form action="index.html" method="GET">	
+			<div class="header">
+				<div class="head1">POLTAX</div>
+				<div class="head2">POLA JASNE WYPEŁNIA PŁATNIK, POLA CIEMNE WYPEŁNIA URZĄD SKARBOWY, WYPEŁNIAĆ NA MASZYNIE, KOMPUTEROWO LUB RĘCZNIE, DUŻYMI DRUKOWANYMI LITERAMI, CZARNYM LUB NIEBIESKIM KOLOREM.</div>
+			</div>
+			
+			<div class="seg0">
+				<div class="rubr rubr1">
+					<span class="opis">1. Identyfikator podatkowy NIP płatnika</span>
+					<input maxlength="10" size="12" type="tel" name="1" placeholder="_ _ _ _ _ _ _ _ _ _"/>
+				</div>
+				<div class="rubr rubr2">
+					<span class="opis">2. Nr dokumentu</span>
+					<input size="12" type="text" name="2"/>
+				</div>
+				<div class="rubr rubr3">
+					<span class="opis">3. Status</span>
+					<input size="12" type="text" name="3"/>
+				</div>
+				<div style="clear:both;"></div>
+				<div class="seg1">
+					<h1>PIT-11</h1>
+					<div class="title">INFORMACJA O DOCHODACH ORAZ O POBRANYCH ZALICZKACH NA PODATEK DOCHODOWY W ROKU
+						<div class="rubr rubr4">
+								<span class="opis">4. Rok</span>
+								<input maxlength="4" size="12" type="tel" name="4" placeholder="_ _ _ _"/>
+						</div>	
+					</div>
+					
+				</div>	
+				<div class="seg2">
+					<table>
+						<tr>
+							<td class="l">Podstawa prawna:</td>
+							<td class="p">Art. 39 ust. 1, art. 42 ust. 2 pkt 1 i art. 42e ust. 6 ustawy z dnia 26 lipca 1991 r. o podatku dochodowym od osób fizycznych (Dz. U. z 2012 r. poz. 361, z późn. zm.), zwanej dalej "ustawą"; art. 35a ust. 5 ustawy, w brzmieniu obowiązującym pred dniem 26 października 2007 r. .</td>
+						</tr>
+						<tr>
+							<td class="l">Składający:</td>
+							<td class="p">Płatnik podatku dochodowego od osób fizycznych.</td>
+						</tr>
+						<tr>
+							<td class="l">Termin składania:</td>
+							<td class="p">Do końca lutego roku następującego po roku podatkowym - wyłącznie dla informacji składanych urzędowi skarbowemu za pomocą środków komunikacji elektronicznej lub podatnikowi; do końca stycznia roku następującego po roku podatkowym w przypadku informacji składanych urzędowi skarbowemu w formie pisemnej, zgodnie z art. 45ba ust. 2 ustawy.</br>
+							W przypadku gdy w trakcie roku podatkowego ustał obowiązek poboru zaliczki przez płatnikówm o których mowa w art. 39 ust. 1 ustawy - w terminie 14 dni od złożenia pisemnego wniosku przez podatnika, w przypadku zaprzestania działalności przez płatników, o których mowa w art. 41 ust. 1 ustawy, przed końcem lutego roku następującego po roku podatkowym - do dnia zaprzestania tej działalności.</td>
+						</tr>
+						<tr>
+							<td class="l">Otrzymuje:</td>
+							<td class="p">Podatnik oraz urząd skarbowy według miejsca zamieszkania podatnika, a w przypadku podatników, o których mowa w art. 3 ust. 2a ustawy, urząd skarbowy w sprawach opodatkowania osób zagranicznych.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="seg3">
+					<h1>A. MIEJSCE I CEL SKŁADANIA INFORMACJI</h1>
+					<div class="pola">
+						<div class="rubr rubr5">
+							<span class="opis">5. Urząd skarbowy, do którego adresowana jest informacja</span>
+							<input size="12" type="text" name="5"/>
+						</div>
+						<div class="rubr rubr6">
+							<span class="opis">6. Cel złożenia formularza (zaznaczyć właściwy kwadrat)</span>
+							<input type="radio" value="" name="6"> 1. złożenie informacji 
+							<input type="radio" value="" name="6"> 2. korekta informacji 
+						</div>
+					</div>
+			</div>
+			<div class="seg3">
+				<h1>B. DANE IDENTYFIKACYJNE PŁATNIKA</h1>
+					<span>* - dotyczy płatnika niebędącego osobą fizyczną</span><span>** - dotyczy płatnika będącego osobą fizyczną</span>
+					<div class="pola">
+						<div class="rubr rubr7">
+							<span class="opis">7. Rodzaj płatnika (zaznaczyć właściwy kwadrat)</span>
+							<input type="radio" value="" name="7"> 1. płatnik niebędący osobą fizyczną
+							<input type="radio" value="" name="7"> 2. osoba fizyczna
+						</div>
+						<div class="rubr rubr8">
+							<span class="opis">8. Pełna nazwa, REGION *</span>
+							<input size="12" type="text" name="8"/>
+						</div>
+						<div class="rubr rubr9">
+							<span class="opis">9. Nazwisko, pierwsze imię, data urodzenia **</span>
+							<input size="12" type="text" name="9"/>
+						</div>
+					</div>
+			
+			</div>
+			<div class="seg3">
+				<h1>C. DANE IDENTYFIKACYJNE I ADRES ZAMIESZKANIA PODATNIKA</h1>
+					<div class="pola">
+						<div class="rubr rubr10">
+							<span class="opis">10. Rodzaj obowiązku podatkowego podatnika (zaznaczyć właściwy kwadrat)</span>
+							<input type="radio" value="" name="10"> 1. nieograniczony obowiązek podatkowy (nierezydent)
+							<input type="radio" value="" name="10"> 2. ograniczony obowiązek podatkowy (nierezydent)
+						</div>
+						<div class="rubr rubr11">
+							<span class="opis">11. Identyfikator podatkowy NIP / numer PESEL</span>
+							<input maxlength="11" size="12" type="tel" name="11" placeholder="_ _ _ _ _ _ _ _ _ _ _"/>
+						</div>
+						<div class="rubr rubr12">
+							<span class="opis">12. Zagraniczny numer identyfikacyjny podatnika</span>
+							<input size="12" type="text" name="12"/>
+						</div>
+						<div class="rubr rubr13">
+							<span class="opis">13. Rodzaj numeru identyfikacyjnego (dokumentu stwierdzającego tożsamość)</span>
+							<input size="12" type="text" name="13"/>
+						</div>
+						<div class="rubr rubr14">
+							<span class="opis">14. Kraj wydania numeru identyfikacyjnego (dokumentu stwierdzającego tożsamość)</span>
+							<input size="12" type="text" name="14"/>
+						</div>
+						<div class="rubr rubr15">
+							<span class="opis">15. Nazwisko</span>
+							<input size="12" type="text" name="15"/>
+						</div>
+						<div class="rubr rubr16">
+							<span class="opis">16. Pierwsze imię</span>
+							<input size="12" type="text" name="16"/>
+						</div>
+						<div class="rubr rubr17">
+							<span class="opis">17. Data urodzenia</span>
+							<input size="12" type="date" name="17"/>
+						</div>
+						<div class="rubr rubr18">
+							<span class="opis">18. Kraj</span>
+							<input size="12" type="text" name="18"/>
+						</div>
+						<div class="rubr rubr19">
+							<span class="opis">19. Województwo</span>
+							<input size="12" type="text" name="19"/>
+						</div>
+						<div class="rubr rubr20">
+							<span class="opis">20. Powiat</span>
+							<input size="12" type="text" name="20"/>
+						</div>
+						<div class="rubr rubr21">
+							<span class="opis">21. Gmina</span>
+							<input size="12" type="text" name="21"/>
+						</div>
+						<div class="rubr rubr22">
+							<span class="opis">22. Ulica</span>
+							<input size="12" type="text" name="22"/>
+						</div>
+						<div class="rubr rubr23">
+							<span class="opis">23. Nr domu</span>
+							<input size="4" type="text" name="23"/>
+						</div>
+						<div class="rubr rubr24">
+							<span class="opis">24. Nr lokalu</span>
+							<input size="4" type="text" name="24"/>
+						</div>
+						<div class="rubr rubr25">
+							<span class="opis">25. Miejscowość</span>
+							<input size="12" type="text" name="25"/>
+						</div>
+						<div class="rubr rubr26">
+							<span class="opis">26. Kod pocztowy</span>
+							<input size="12" type="text" name="26"/>
+						</div>
+						<div class="rubr rubr27">
+							<span class="opis">27. Poczta</span>
+							<input size="12" type="text" name="27"/>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					
+			</div>
+			<div class="seg3">
+				<h1>D. INFORMACJA O KOSZTACH UZYSKANIA PRZYCHODU Z TYTUŁU STOSUNKU SŁUŻBOWEGO, STOSUNKU PRACY, SPÓŁDZIELCZEGO STOSUNKU PRACY ORAZ PRACY NAKŁADCZEJ</h1>
+					<div class="pola">
+						<div class="rubr">
+							<span class="opis">28. Koszty uzyskania przychodów, wykazane w poz. 30, zostały uwzględnione do wysokości przysługującej podatnikowi (zaznaczyć właściwy kwadrat)</span>
+							<table>
+								<tr>
+									<td>
+										<input type="radio" value="" name="28"> 1. z jednego stosunku pracy (stosunków pokrewnych)
+									</td>
+									<td>
+										<input type="radio" value="" name="28"> 2. z więcej niż jednego stosunku pracy (stosunków pokrewnych)
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" value="" name="28"> 3. z jednego stosunku pracy (stosunków pokrewnych), podwyższone w związku z zamieszkiwaniem podatnika poza miejscowością, w której znajduje się zakład pracy 
+									</td>
+									<td>
+										<input type="radio" value="" name="28"> 4. z więcej niż jednego stosunku pracy (stosunków pokrewnych), podwyższone w związku z zamieszkiwaniem podatnika poza miejscowością, w której znajduje się zakład pracy 
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+			</div>
+		</form>
+	</div>
+  </body>
+</html>
