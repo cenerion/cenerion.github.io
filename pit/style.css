@@ -86,7 +86,7 @@ h1{
 
 
 .seg0{
-	border-top: 5px solid black;
+	border-top: 2px solid black;
 	min-height: 100px;
 	margin: 2.5px;
 }
@@ -114,7 +114,7 @@ h1{
 .seg3{
 	background-color: #ccc;
 	border:2px solid black;
-	border-top: 5px solid black;
+	/border-top: 2px solid black;
 	margin: 2.5px;
 	min-height: 100px;
 }
