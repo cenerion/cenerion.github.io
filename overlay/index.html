@@ -6,94 +6,15 @@
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body translate="no">
   <div id="main">
-    <img src="background.png" alt="background">
+    <img src="background.png" alt="background" id="bg_back">
     <div id="weekpart"></div>
-    <img src="background.png" alt="background">
+    <img src="background.png" alt="background" id="bg_front">
     <div id="date"></div>
     <div id="weekday"></div>
     <div id="daytime"></div>
   </div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
-  <script>
-
-var weekpart = document.getElementById("weekpart");
-var date = document.getElementById("date");
-var weekday = document.getElementById("weekday");
-var daytime = document.getElementById("daytime");
-
-
-var c;
-setInterval(
-c = function() {
-	//output.innerText = moment().format(urlParams["format"] || 'DD/MM/YYYY HH:mm:ss');
-    //weekpart.innerText = "weekday";
-    date.innerText = moment().format('DD/MM');
-    //weekday.innerText = moment().format('ddd');
-    //daytime.innerText = "afternoon";
-
-    var now = new Date();
-
-    day = now.getDay();
-
-    switch (day) {
-        case 0:
-        case 6:
-            weekpart.innerText = "weekend";
-            break;
-
-        default:
-            weekpart.innerText = "weekday";
-            break;
-    }
-
-    //date.innerText =
-
-    switch (day) {
-        case 0:
-            weekday.innerText = "Sun";
-            break;
-        case 1:
-            weekday.innerText = "Mon";
-            break;
-        case 2:
-            weekday.innerText = "Tue";
-            break;
-        case 3:
-            weekday.innerText = "Wed";
-            break;
-        case 4:
-            weekday.innerText = "Thu";
-            break;
-        case 5:
-            weekday.innerText = "Fri";
-            break;
-        case 6:
-            weekday.innerText = "Sat";
-            break;
-    }
-
-
-    var h = now.getHours();
-    if(h < 6 || h >= 22){
-        daytime.innerText = "night";
-    }
-    else if(h < 12){
-        daytime.innerText = "morning";
-    }
-    else if(h < 17){
-        daytime.innerText = "afternoon";
-    }
-    else{
-        daytime.innerText = "evening";
-    }
-
-    //test.innerText = moment().format('DD/MM/YYYY HH:mm:ss');
-}, 1000);
-c();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
