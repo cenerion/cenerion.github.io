@@ -1,0 +1,19 @@
+    @font-face {
+        font-family: 'Kozuka Gothic Pro H';
+        src: local('Kozuka Gothic Pro H'), 
+            url('KozGoPro-Heavy-AlphaNum.woff2') format('woff2'),
+            url('KozGoPro-Heavy-AlphaNum.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Kozuka Gothic Pro M';
+        src: local('Kozuka Gothic Pro M'), 
+            url('KozGoPro-Medium-AlphaNum.woff2') format('woff2'),
+            url('KozGoPro-Medium-AlphaNum.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }

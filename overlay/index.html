@@ -2,68 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>A simple clock</title>
-  <style>
-    body{
-        background-color: darkgray;
-    }
-    #main{
-        width: 500px;
-        position: relative;
-        top: 20px;
-    }
-    #main img{
-        position: absolute;
-        width: 100%;
-        opacity: 0.7;
-    }
-
-    #weekpart, #weekday{
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-    }
-
-    #weekpart{
-        position: absolute;
-        top: -35px;
-        left: 5px;
-        width: 100%;
-        text-align: center;
-        font-stretch: 50%;
-        font-family: sans-serif;
-        font-size: 120px;
-    }
-    #date{
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 280px;
-        text-align: center;
-        font-size: 100px;
-        letter-spacing: 3px;
-    }
-    #weekday{
-        position: absolute;
-        top: 43px;
-        left: 303px;
-        width: 156px;
-        text-align: center;
-        font-stretch: 50%;
-        font-family: sans-serif;
-        font-size: 58px;
-    }
-    #daytime{
-        color: rgb(210, 182, 222);
-        text-transform: lowercase;
-        position: absolute;
-        top: 108px;
-        left: 25px;
-        width: 300px;
-        text-align: center;
-        font-size: 40px;
-        letter-spacing: 15px;
-    }
-  </style>
+  <title>Neri overlay</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body translate="no">
@@ -71,7 +12,6 @@
     <img src="background.png" alt="background">
     <div id="weekpart"></div>
     <img src="background.png" alt="background">
-
     <div id="date"></div>
     <div id="weekday"></div>
     <div id="daytime"></div>
@@ -92,20 +32,52 @@ c = function() {
 	//output.innerText = moment().format(urlParams["format"] || 'DD/MM/YYYY HH:mm:ss');
     //weekpart.innerText = "weekday";
     date.innerText = moment().format('DD/MM');
-    weekday.innerText = moment().format('ddd');
+    //weekday.innerText = moment().format('ddd');
     //daytime.innerText = "afternoon";
 
     var now = new Date();
 
-    if(now.getDay() == 0 || now.getDay() == 6){
-        weekpart.innerText = "weekend";
+    day = now.getDay();
+
+    switch (day) {
+        case 0:
+        case 6:
+            weekpart.innerText = "weekend";
+            break;
+
+        default:
+            weekpart.innerText = "weekday";
+            break;
     }
-    else{
-        weekpart.innerText = "weekday"
+
+    //date.innerText =
+
+    switch (day) {
+        case 0:
+            weekday.innerText = "Sun";
+            break;
+        case 1:
+            weekday.innerText = "Mon";
+            break;
+        case 2:
+            weekday.innerText = "Tue";
+            break;
+        case 3:
+            weekday.innerText = "Wed";
+            break;
+        case 4:
+            weekday.innerText = "Thu";
+            break;
+        case 5:
+            weekday.innerText = "Fri";
+            break;
+        case 6:
+            weekday.innerText = "Sat";
+            break;
     }
+
 
     var h = now.getHours();
-
     if(h < 6 || h >= 22){
         daytime.innerText = "night";
     }

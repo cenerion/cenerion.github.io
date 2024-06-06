@@ -1,0 +1,71 @@
+body{
+    background-color: darkgray;
+}
+#main{
+    width: 500px;
+    position: relative;
+    top: 20px;
+}
+#main img{
+    position: absolute;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#weekpart {
+    font-family: "Kozuka Gothic Pro H", sans-serif;
+    font-weight: bold;
+}
+#date {
+    font-family: "Kozuka Gothic Pro M", serif;
+    font-weight: bold;
+}
+#daytime {
+    font-family: "Kozuka Gothic Pro M", serif;
+}
+#weekday {
+    font-family: "Tahoma", sans-serif;
+}
+
+#weekpart, #weekday{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#weekpart{
+    position: absolute;
+    top: -35px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-stretch: 50%;
+    font-size: 118px;
+}
+#date{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 280px;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 3px;
+}
+#weekday{
+    position: absolute;
+    top: 42px;
+    left: 303px;
+    width: 156px;
+    text-align: center;
+    font-size: 55px;
+}
+#daytime{
+    color: rgb(210, 182, 222);
+    text-transform: lowercase;
+    position: absolute;
+    top: 108px;
+    left: 25px;
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 15px;
+}
