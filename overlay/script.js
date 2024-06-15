@@ -4,7 +4,7 @@ var weekday = document.getElementById("weekday");
 var daytime = document.getElementById("daytime");
 
 var c;
-setInterval(
+var timer = setInterval(
 c = function() {
     var now = new Date();
     
@@ -65,5 +65,5 @@ c = function() {
     else{
         daytime.innerText = "evening";
     }
-}, 1000);
+}, 5000);
 c();

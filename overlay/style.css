@@ -43,7 +43,7 @@ body{
     text-align: center;
     font-size: 118px;
     transform-origin: top left;
-    transform: scaleX(0.84);
+    transform: scaleX(0.83);
 }
 #date{
     position: absolute;
