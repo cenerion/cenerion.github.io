@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   width="1184"
+   height="388"
+   viewBox="0 0 1184 388"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    #weekpart {
+        font-family: "Kozuka Gothic Pro H", sans-serif;
+        font-weight: bold;
+    }
+    #date {
+        font-family: "Kozuka Gothic Pro M", serif;
+        font-weight: bold;
+    }
+    #weekday {
+        font-family: "Tahoma", sans-serif;
+    }
+    #daytime {
+        font-family: "Kozuka Gothic Pro M", serif;
+    }
+
+
+    #weekpart, #weekday {
+        fill: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+
+    #weekpart {
+        fill: #fff;
+        font-size: 280px;
+    }
+
+    #date{
+        fill: black;
+        font-size: 237px;
+        letter-spacing: 7px;
+    }
+    #weekday{
+        fill: #fff;
+        font-size: 130px;
+    }
+
+    #daytime{
+        fill: rgb(210, 182, 222);
+        text-transform: lowercase;
+        font-size: 95px;
+        letter-spacing: 35.5px;
+    }
+
+
+    #hi-band {
+        fill: #cba2ed;
+    }
+    #hi-band-back {
+        fill-opacity: 1.0;
+    }
+    #hi-band-front {
+        fill-opacity: 0.7;
+    }
+
+    #romb {
+        fill: #000;
+    }
+    #romb-back {
+        fill-opacity: 1.0;
+    }
+    #romb-front {
+        fill-opacity: 0.7;
+    }
+  </style>
+  <script type="text/javascript"><![CDATA[
+    var c;
+    var timer;
+
+    window.onload = () => {
+        var weekpart = document.getElementById("weekpart");
+        var date = document.getElementById("date");
+        var weekday = document.getElementById("weekday");
+        var daytime = document.getElementById("daytime");
+        timer = setInterval(
+        c = () => {
+            var now = new Date();
+            
+            day_m = now.getDate();
+            month = now.getMonth() + 1;
+            date.textContent = ((day_m < 10) ? "0" : "") + day_m.toString()
+                        + ((month < 10) ? "/0" : "/") + month.toString();
+
+                        
+            day = now.getDay();
+
+            switch (day) {
+                case 0:
+                case 6:
+                    weekpart.textContent = "weekend";
+                    break;
+
+                default:
+                    weekpart.textContent = "weekday";
+                    break;
+            }
+
+            switch (day) {
+                case 0:
+                    weekday.textContent = "Sun";
+                    break;
+                case 1:
+                    weekday.textContent = "Mon";
+                    break;
+                case 2:
+                    weekday.textContent = "Tue";
+                    break;
+                case 3:
+                    weekday.textContent = "Wed";
+                    break;
+                case 4:
+                    weekday.textContent = "Thu";
+                    break;
+                case 5:
+                    weekday.textContent = "Fri";
+                    break;
+                case 6:
+                    weekday.textContent = "Sat";
+                    break;
+            }
+
+
+            var h = now.getHours();
+            if(h < 6 || h >= 22){
+                daytime.textContent = "night";
+            }
+            else if(h < 12){
+                daytime.textContent = "morning";
+            }
+            else if(h < 17){
+                daytime.textContent = "afternoon";
+            }
+            else{
+                daytime.textContent = "evening";
+            }
+        }, 5000);
+        c();
+    }
+  ]]></script>
+  <defs id="defs">
+    <path
+       id="hi-band"
+       d="m 0,114.0 v 170.0 h 798.5 l -79.5,-79.5 90.5,-90.5 z m 995.5,0 90.5,90.5 -79.5,79.5 h 177.5 V 114.0 Z" />
+    <rect
+      id="romb"
+      width="259.5"
+      height="259.5"
+      x="653.0"
+      y="-623.3"
+      transform="rotate(45)" />
+  </defs>
+  <use id="hi-band-back" href="#hi-band" />
+  <use id="romb-back" href="#romb" />
+  <text
+    id="weekpart"
+    x="0"
+    y="202"
+    textLength="1184"
+    lengthAdjust="spacingAndGlyphs"
+    >WEEKDAY</text>
+  <use id="hi-band-front" href="#hi-band" />
+  <use id="romb-front" href="#romb" />
+  <path
+    id="lo-band"
+    style="fill:#000000;"
+    d="m 0,303.00011 v 59.99996 h 831.62521 l -60.00047,-59.99996 z m 1033.3752,0 -60.00051,59.99996 h 210.62541 v -59.99996 z" />
+  <text
+    id="date"
+    x="360"
+    y="280"
+    text-anchor="middle"
+  >10/08</text>
+  <text
+    id="weekday"
+    x="902"
+    y="250"
+    text-anchor="middle"
+  >mon</text>
+  <text
+    id="daytime"
+    x="440"
+    y="360"
+    text-anchor="middle"
+  >afternoon</text>
+</svg>

@@ -1,19 +1,5 @@
-body{
-    background-color: darkgray;
-}
-#main{
-    width: 500px;
-    position: relative;
-    top: 20px;
-}
+body { background-color: rgba(169, 169, 169, 0); margin: 0px auto; overflow: hidden; }
 
-#bg_back, #bg_front{
-    position: absolute;
-    width: 100%;
-}
-#bg_front{
-    opacity: 0.7;
-}
 
 #weekpart {
     font-family: "Kozuka Gothic Pro H", sans-serif;
@@ -23,53 +9,62 @@ body{
     font-family: "Kozuka Gothic Pro M", serif;
     font-weight: bold;
 }
-#daytime {
-    font-family: "Kozuka Gothic Pro M", serif;
-}
 #weekday {
     font-family: "Tahoma", sans-serif;
 }
+#daytime {
+    font-family: "Kozuka Gothic Pro M", serif;
+}
 
-#weekpart, #weekday{
-    color: rgb(255, 255, 255);
+
+#weekpart {
+    fill: #fff;
     text-transform: uppercase;
+    font-size: 280px;
 }
 
-#weekpart{
-    position: absolute;
-    top: -35px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    font-size: 118px;
-    transform-origin: top left;
-    transform: scaleX(0.83);
-}
 #date{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 280px;
-    text-align: center;
-    font-size: 100px;
-    letter-spacing: 3px;
+    fill: #000;
+    font-size: 237px;
+    letter-spacing: 7px;
 }
+
 #weekday{
-    position: absolute;
-    top: 42px;
-    left: 303px;
-    width: 156px;
-    text-align: center;
-    font-size: 55px;
+    fill: #fff;
+    text-transform: uppercase;
+    font-size: 130px;
 }
+
 #daytime{
-    color: rgb(210, 182, 222);
+    fill: rgb(210, 182, 222);
     text-transform: lowercase;
-    position: absolute;
-    top: 108px;
-    left: 25px;
-    width: 300px;
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 15px;
+    font-size: 95px;
+    letter-spacing: 35.5px;
+}
+
+
+#hi-band {
+    fill: #cba2ed;
+}
+
+#lo-band {
+    fill: #000;
+}
+
+#romb {
+    fill: #000;
+}
+
+
+#hi-band-back {
+    fill-opacity: 1.0;
+}
+#hi-band-front {
+    fill-opacity: 0.7;
+}
+#romb-back {
+    fill-opacity: 1.0;
+}
+#romb-front {
+    fill-opacity: 0.7;
 }

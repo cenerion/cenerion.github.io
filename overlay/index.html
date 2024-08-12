@@ -8,12 +8,58 @@
 </head>
 <body translate="no">
   <div id="main">
-    <img src="background.png" alt="background" id="bg_back">
-    <div id="weekpart"></div>
-    <img src="background.png" alt="background" id="bg_front">
-    <div id="date"></div>
-    <div id="weekday"></div>
-    <div id="daytime"></div>
+  <svg
+    viewBox="0 0 1184 388"
+    version="1.1"
+    id="svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+  <defs id="defs">
+    <path
+      id="hi-band"
+      d="m 0,114.0 v 170.0 h 798.5 l -79.5,-79.5 90.5,-90.5 z m 995.5,0 90.5,90.5 -79.5,79.5 h 177.5 V 114.0 Z" />
+    <rect
+      id="romb"
+      width="259.5"
+      height="259.5"
+      x="653.0"
+      y="-623.3"
+      transform="rotate(45)" />
+  </defs>
+  <use id="hi-band-back" href="#hi-band" />
+  <use id="romb-back" href="#romb" />
+  <text
+    id="weekpart"
+    x="0"
+    y="202"
+    textLength="1184"
+    lengthAdjust="spacingAndGlyphs"
+    >WEEKDAY</text>
+  <use id="hi-band-front" href="#hi-band" />
+  <use id="romb-front" href="#romb" />
+  <path
+    id="lo-band"
+    style="fill:#000000;"
+    d="m 0,303.00011 v 59.99996 h 831.62521 l -60.00047,-59.99996 z m 1033.3752,0 -60.00051,59.99996 h 210.62541 v -59.99996 z" />
+  <text
+    id="date"
+    x="360"
+    y="280"
+    text-anchor="middle"
+    >10/08</text>
+  <text
+    id="weekday"
+    x="902"
+    y="250"
+    text-anchor="middle"
+    >mon</text>
+  <text
+    id="daytime"
+    x="440"
+    y="360"
+    text-anchor="middle"
+    >afternoon</text>
+ </svg>
   </div>
   <script src="script.js"></script>
 </body>

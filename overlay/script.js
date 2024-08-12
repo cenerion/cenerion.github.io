@@ -1,69 +1,72 @@
-var weekpart = document.getElementById("weekpart");
-var date = document.getElementById("date");
-var weekday = document.getElementById("weekday");
-var daytime = document.getElementById("daytime");
-
 var c;
-var timer = setInterval(
-c = function() {
-    var now = new Date();
-    
-    day_m = now.getDate();
-    month = now.getMonth() + 1;
-    date.innerText = ((day_m < 10) ? "0" : "") + day_m.toString()
-                   + ((month < 10) ? "/0" : "/") + month.toString();
+var timer;
 
-                   
-    day = now.getDay();
+window.onload = () => {
+    var weekpart = document.getElementById("weekpart");
+    var date = document.getElementById("date");
+    var weekday = document.getElementById("weekday");
+    var daytime = document.getElementById("daytime");
+    timer = setInterval(
+    c = () => {
+        var now = new Date();
+        
+        day_m = now.getDate();
+        month = now.getMonth() + 1;
+        date.textContent = ((day_m < 10) ? "0" : "") + day_m.toString()
+                    + ((month < 10) ? "/0" : "/") + month.toString();
 
-    switch (day) {
-        case 0:
-        case 6:
-            weekpart.innerText = "weekend";
-            break;
+                    
+        day = now.getDay();
 
-        default:
-            weekpart.innerText = "weekday";
-            break;
-    }
+        switch (day) {
+            case 0:
+            case 6:
+                weekpart.textContent = "weekend";
+                break;
 
-    switch (day) {
-        case 0:
-            weekday.innerText = "Sun";
-            break;
-        case 1:
-            weekday.innerText = "Mon";
-            break;
-        case 2:
-            weekday.innerText = "Tue";
-            break;
-        case 3:
-            weekday.innerText = "Wed";
-            break;
-        case 4:
-            weekday.innerText = "Thu";
-            break;
-        case 5:
-            weekday.innerText = "Fri";
-            break;
-        case 6:
-            weekday.innerText = "Sat";
-            break;
-    }
+            default:
+                weekpart.textContent = "weekday";
+                break;
+        }
+
+        switch (day) {
+            case 0:
+                weekday.textContent = "Sun";
+                break;
+            case 1:
+                weekday.textContent = "Mon";
+                break;
+            case 2:
+                weekday.textContent = "Tue";
+                break;
+            case 3:
+                weekday.textContent = "Wed";
+                break;
+            case 4:
+                weekday.textContent = "Thu";
+                break;
+            case 5:
+                weekday.textContent = "Fri";
+                break;
+            case 6:
+                weekday.textContent = "Sat";
+                break;
+        }
 
 
-    var h = now.getHours();
-    if(h < 6 || h >= 22){
-        daytime.innerText = "night";
-    }
-    else if(h < 12){
-        daytime.innerText = "morning";
-    }
-    else if(h < 17){
-        daytime.innerText = "afternoon";
-    }
-    else{
-        daytime.innerText = "evening";
-    }
-}, 5000);
-c();
+        var h = now.getHours();
+        if(h < 6 || h >= 22){
+            daytime.textContent = "night";
+        }
+        else if(h < 12){
+            daytime.textContent = "morning";
+        }
+        else if(h < 17){
+            daytime.textContent = "afternoon";
+        }
+        else{
+            daytime.textContent = "evening";
+        }
+    }, 5000);
+    c();
+}
